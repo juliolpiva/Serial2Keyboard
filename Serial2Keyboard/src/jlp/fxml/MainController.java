@@ -118,7 +118,7 @@ public class MainController implements Initializable {
 			    
 			    
 			} else {
-				dialogCreator.alertError("Error", "Nao foi possível Conectar", "Nao foi possivel conectar na porta selecionada");
+				dialogCreator.alertError("Error", "Nao foi possivel Conectar", "Nao foi possivel conectar na porta selecionada");
 				btnStart.setSelected(false);
 			}
 			
@@ -146,7 +146,6 @@ public class MainController implements Initializable {
 	        Robot robot = new Robot();
 
 	        char[] filtredMsg = receivedMsg.toCharArray();
-	        // Simulate a key press
 	        
 	        for(int i=0;i<receivedMsg.length();i++){
 	        	robot.keyPress(filtredMsg[i]);
@@ -218,13 +217,7 @@ public class MainController implements Initializable {
 		Stage stage = (Stage) cfgDialog.getDialogPane().getScene().getWindow();
 		stage.getIcons().add(dialogCreator.terminalIcon);
 		cfgDialog.showAndWait();
-		// optCfg.ifPresent(cfg -> System.out.println("A configuração é : " +
-		// cfg.showconfig()));
-		// System.out.println(configatual.showconfig());
 		lblConfig.setText("Config: " + configAtual);
-
-		// --------------------------
-		
 		
         Properties configProperties = new Properties();
         configProperties.setProperty("portName", configAtual.portName);
@@ -304,7 +297,7 @@ public class MainController implements Initializable {
 	
 	public void actionSobre(ActionEvent evt) {
 		dialogCreator.alertInformation("Sobre", "Serial2Key",
-				"Desenvolvido por Julio Locatelli Piva\nVersao 1.0");
+				"Desenvolvido por Julio Locatelli Piva\nVersao 1.1");
 	}
 
 }

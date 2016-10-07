@@ -13,7 +13,6 @@ public class ConfigCOM {
     
     //0 or 'N': no parity, 1: ODD, 2: EVEN, 3: MARK, 4: SPACE
     public final int parityBit;
-    
     public final int stopBits;
 
     public ConfigCOM(String port, int baudrate, int dataBits, int parity, int stopBits)
@@ -32,7 +31,7 @@ public class ConfigCOM {
         {
             InputStream cfgStream = ConfigCOM.class.getResourceAsStream(SERIAL_PORT_PROPERTIES);
             configProperties.load(cfgStream);
-            System.out.println(configProperties);
+           // System.out.println(configProperties);
         } catch (IOException e) 
         {
            System.err.println("Nao foi possivel carregar as configuracoes "
