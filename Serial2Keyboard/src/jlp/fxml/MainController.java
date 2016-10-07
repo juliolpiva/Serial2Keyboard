@@ -118,7 +118,7 @@ public class MainController implements Initializable {
 			    
 			    
 			} else {
-				dialogCreator.alertError("Error", "Não foi possível Conectar", "Não foi possível conectar na porta selecionada");
+				dialogCreator.alertError("Error", "Nao foi possível Conectar", "Nao foi possivel conectar na porta selecionada");
 				btnStart.setSelected(false);
 			}
 			
@@ -173,7 +173,7 @@ public class MainController implements Initializable {
 		}
 
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Selecione o diretório para Salvar!");
+		fileChooser.setTitle("Selecione o diretorio para Salvar!");
 		fileChooser.getExtensionFilters().addAll(new ExtensionFilter("Text File", "*.txt"),
 				new ExtensionFilter("All Files", "*.*"));
 		fileChooser.setInitialFileName("config.txt");
@@ -200,7 +200,7 @@ public class MainController implements Initializable {
 		dialogPane.setContent((AnchorPane) dialogCtrl);
 
 		cfgDialog.setDialogPane(dialogPane);
-		cfgDialog.setTitle("Configuração da porta serial");
+		cfgDialog.setTitle("Configuracao da porta serial");
 		cfgDialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
 		cfgDialog.setResultConverter(btnType -> {
 
@@ -244,7 +244,7 @@ public class MainController implements Initializable {
 
 	public void actionSerialLoad(ActionEvent evt) {
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Selecione o arquivo de programação!");
+		fileChooser.setTitle("Selecione o arquivo de programacao!");
 		fileChooser.getExtensionFilters().addAll(new ExtensionFilter("Text Files", "*.txt"),
 				new ExtensionFilter("All Files", "*.*"));
 		File selectedFile = fileChooser.showOpenDialog(main.getprimary());
@@ -278,7 +278,7 @@ public class MainController implements Initializable {
 		}
 
 		FileChooser fileChooser = new FileChooser();
-		fileChooser.setTitle("Selecione o diretório para Salvar!");
+		fileChooser.setTitle("Selecione o diretorio para Salvar!");
 		fileChooser.getExtensionFilters().addAll(new ExtensionFilter("Text File", "*.txt"),
 				new ExtensionFilter("All Files", "*.*"));
 		fileChooser.setInitialFileName("Screen.txt");
@@ -304,7 +304,7 @@ public class MainController implements Initializable {
 	
 	public void actionSobre(ActionEvent evt) {
 		dialogCreator.alertInformation("Sobre", "Serial2Key",
-				"Desenvolvido por Júlio Locatelli Piva\nVersão 1.0");
+				"Desenvolvido por Julio Locatelli Piva\nVersao 1.0");
 	}
 
 }

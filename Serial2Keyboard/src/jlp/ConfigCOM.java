@@ -35,8 +35,8 @@ public class ConfigCOM {
             System.out.println(configProperties);
         } catch (IOException e) 
         {
-           System.err.println("Não foi possível carregar as configurações "
-                   + "padrão a partir do arquivo " + SERIAL_PORT_PROPERTIES);
+           System.err.println("Nao foi possivel carregar as configuracoes "
+                   + "padrao a partir do arquivo " + SERIAL_PORT_PROPERTIES);
            System.err.println(e.getMessage());
         }
         return loadFromProperties(configProperties);
