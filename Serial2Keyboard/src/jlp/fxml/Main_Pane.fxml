@@ -16,25 +16,25 @@
                <content>
                   <AnchorPane minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0">
                      <children>
-                        <Label fx:id="lblConfig" alignment="CENTER" layoutX="1.0" layoutY="247.0" prefHeight="20.0" prefWidth="150.0" text="Config" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0">
+                        <Label fx:id="lblConfig" alignment="CENTER" layoutX="1.0" layoutY="247.0" prefHeight="20.0" prefWidth="200.0" text="Config" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0">
                            <font>
                               <Font size="10.0" />
                            </font>
                         </Label>
-                        <TextArea fx:id="viewTela" editable="false" layoutX="194.0" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="246.0" prefWidth="206.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
-                        <TextField fx:id="stringIni" layoutX="90.0" layoutY="47.0" prefHeight="25.0" prefWidth="40.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="50.0" />
-                        <Label fx:id="lblIni" alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="20.0" prefWidth="79.0" text="Inicio" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
+                        <TextArea fx:id="viewTela" editable="false" layoutX="200.0" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="246.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                        <TextField fx:id="stringIni" layoutX="90.0" layoutY="47.0" prefHeight="25.0" prefWidth="40.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0" />
+                        <Label fx:id="lblIni" alignment="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="20.0" prefWidth="90.0" text="Inicio" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="lblEnd" alignment="CENTER" layoutX="8.0" layoutY="87.0" prefHeight="20.0" prefWidth="79.0" text="Fim" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0">
+                        <Label fx:id="lblEnd" alignment="CENTER" layoutX="8.0" layoutY="87.0" prefHeight="20.0" prefWidth="90.0" text="Fim" textAlignment="CENTER" textFill="#0f0f0f" underline="false" wrapText="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="stringEnd" layoutX="88.0" layoutY="84.0" prefHeight="25.0" prefWidth="40.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="90.0" />
-                        <ToggleButton fx:id="btnStart" layoutX="48.0" layoutY="206.0" mnemonicParsing="false" onAction="#actionStart" prefHeight="34.0" prefWidth="55.0" text="Start" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="50.0" />
+                        <TextField fx:id="stringEnd" layoutX="88.0" layoutY="84.0" prefHeight="25.0" prefWidth="40.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="90.0" />
+                        <ToggleButton fx:id="btnStart" layoutX="48.0" layoutY="206.0" mnemonicParsing="false" onAction="#actionStart" prefHeight="34.0" prefWidth="55.0" text="Start" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="75.0" />
                      </children>
                   </AnchorPane>
                </content>
